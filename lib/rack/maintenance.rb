@@ -39,7 +39,7 @@ private ######################################################################
   end
 
   def path_in_app(env)
-    env["PATH_INFO"] !~ /^\/assets/
+    env["PATH_INFO"] !~ /^\/(assets|admin)/
   end
 
 end
